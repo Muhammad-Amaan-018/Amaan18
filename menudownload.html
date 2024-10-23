@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Image</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: rgb(28, 28, 28);
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 10px;
+            background-color: rgb(207, 144, 35);
+            border-radius: 20%;
+            transition: all 1s;
+        }
+        button:hover {
+            transform: scale(1.1);
+            background-color: rgb(106, 69, 6);
+            color: aliceblue;
+        }
+        h1 {
+            color: bisque;
+        }
+        img {
+            max-width: 80%; /* Make the image responsive */
+            height: 500px;
+            margin-bottom: 20px; /* Space between the image and buttons */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Download Your Image</h1>
+    <img src="Black Restaurant Menu.png" alt="Downloadable Image"> <!-- Replace with your image path -->
+    
+    <button id="downloadBtn">Download Image</button>
+    <button onclick="goHome()">Back to Home</button>
+
+    <script>
+        document.getElementById('downloadBtn').onclick = function() {
+            const link = document.createElement('a');
+            link.href = 'Black Restaurant Menu.png'; // Replace with the path to your image
+            link.download = 'downloaded_image.png'; // Specify the name for the downloaded file
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        };
+
+        function goHome() {
+            window.location.href = 'Project.html'; // Replace with your home page URL
+        }
+    </script>
+
+</body>
+</html>

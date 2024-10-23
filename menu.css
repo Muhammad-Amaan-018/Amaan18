@@ -1,0 +1,134 @@
+
+/* Nav-bar */
+
+
+.mynav{
+ 
+    background: linear-gradient(131deg,rgb(28, 10, 0),rgb(170, 67, 23) ,rgb(41, 13, 0));
+    transition: all;
+    transition-duration: 0.5;
+    /* overflow: hidden;    */
+    height: 85px;
+    z-index: 1;
+    
+}
+.mynav ul .nav-item:hover{ 
+  border-bottom: 2px solid rgb(189, 125, 5);
+  
+  /* transform: scale(1.2); */
+  /* transform: rotate(360deg);     */
+}
+.pizzaz{
+  color: rgb(131, 43, 11);
+}
+.navtext{
+  font-size: 20px;   
+  margin: 10px;
+ 
+}
+.nav-item{
+  transition: all;
+  transition-duration: 0.3s;
+  /* height: 70px; */
+  font-family: cursive;
+  
+  
+}
+/* footer */
+.fa-facebook{
+    font-size: 30px;
+   color: rgb(0, 0, 255); 
+  }
+  .fa-facebook:hover{
+    color:rgb(46, 46, 239);
+    background-color: aliceblue;
+    border-radius: 100%;
+  }
+  .fa-twitter{
+    font-size: 30px;
+    color: rgb(27, 122, 160);
+  }
+  .fa-twitter:hover{
+    color: skyblue;
+  }
+  .fa-regular{
+    font-size: 30px;
+    color: rgb(162, 80, 80);
+  }
+  .fa-regular:hover{
+    color: rgb(162, 126, 126);
+    
+    
+
+
+  }
+  .fa-instagram{
+   font-size: 30px;
+   color: rgb(199, 51, 76);
+   
+  }
+  .fa-instagram:hover{
+    color: rgb(201, 104, 68);
+  }
+  #a1{
+    list-style-type: none;
+    color: white;
+  }
+ /* cards */
+ .card-body .texxt{
+    color: rgb(244, 220, 68); font-size: 1.2em; font-weight: bold;
+  }
+  
+  .card-body .btn {
+    background: linear-gradient(131deg,rgb(120, 5, 5),rgb(196, 106, 46),rgb(195, 153, 64) ,rgb(120, 5, 5));
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    border: 1px solid black;
+    color: aliceblue;
+    width: 70%;
+    border-radius: 20%;
+  }
+  
+  .card-body .btn:hover {
+    transform: scale(1.1);
+    background-color: #ec8f33;
+    color: white;
+  }
+  
+  
+  /* mmmmmmmmmmmm */
+  .card{
+    margin-top: 10px;
+      
+    border-radius: 10% !important;
+          transition: all;
+    transition-duration: 0.4s;
+    overflow: hidden;
+    box-shadow: 10px 10px 10px rgb(26, 12, 0);
+   }
+   .card-body{
+    /* background-color:black; */
+      /* border: 2px solid black; */
+      background-image: url(pexels-pixabay-326333.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      
+  }
+  .card-text{
+      color: rgb(252, 252, 252);
+  }
+   
+  .card-title{
+      color: orangered;
+  }
+  .card-img-top{
+    height: 200px;
+    transition: all;
+    transition-duration: 2s;
+  }
+  .card:hover{
+    transform: scale(0.95);
+    
+    
+  }
+  
